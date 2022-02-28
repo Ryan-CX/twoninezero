@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3 Stock List</title>
+    <link rel="stylesheet" href="./styles/stocklist.css">
+
+</head>
+
+<body>
+    <h1>List of Stocks Available for Purchase</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Symbol</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Microsoft</td>
+                <td>MSFT</td>
+                <td>232.04</td>
+            </tr>
+            <tr>
+                <td>Oracle</td>
+                <td>ORCL</td>
+                <td>67.08</td>
+            </tr>
+            <tr>
+                <td>Splunk</td>
+                <td>SPLK</td>
+                <td>137.55</td>
+            </tr>
+            <tr>
+                <td>Snowflake</td>
+                <td>SNOW</td>
+                <td>235.8</td>
+            </tr>
+            <tr>
+                <td>Terradata</td>
+                <td>TDC</td>
+                <td>44.98</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <form action="http://localhost:3000/stockorder" method="post">
+        <label for="stocks">Choose a Stock:</label>
+        <select name="stocks">
+            <option value="Microsoft">Microsoft</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Splunk">Splunk</option>
+            <option value="Snowflake">Snowflake</option>
+            <option value="Terradata">Terradata</option>
+        </select>
+
+        <label>and count</label>
+        <input type="number" name="count">
+        <p>for the stock you want to buy</p>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>

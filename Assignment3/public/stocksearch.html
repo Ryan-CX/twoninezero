@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search page</title>
+</head>
+
+<body>
+    <form action="http://localhost:3000/stocksearch" method="get">
+        <p>Find the stock with the</p>
+        <input type="radio" name='option' value="highest" id='highest'>
+        <label for="highest">highest</label>
+        <p>price or the one with the</p>
+        <input type="radio" name='option' value="lowest" id='lowest'>
+        <label for="lowest">lowest</label>
+        <p>price.</p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
