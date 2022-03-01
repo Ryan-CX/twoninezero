@@ -12,21 +12,21 @@ content-type: application/json
 GET http://localhost:3000/movies HTTP/1.1
 
 ###
-GET http://localhost:3000/movies/61041b383628704ea0443c73 HTTP/1.1
+GET http://localhost:3000/movies/621d8f9a9175a2263f3bd593 HTTP/1.1
 
 ###
 
-PUT http://localhost:3000/movies/61041b383628704ea0453c73 HTTP/1.1
+PUT http://localhost:3000/movies/621d8fbd37f6340da86f7f0e HTTP/1.1
 content-type: application/json
 
 {
-    "title": "Sorry to Bother You",
+    "title": "Nice to Meet You 2",
     "year": 2018,
-    "language": "English"
+    "language": "Japanese"
 }
 
 ###
-DELETE http://localhost:3000/movies/61041b383628704ea0453c73 HTTP/1.1
+DELETE http://localhost:3000/movies/621d8f9a9175a2263f3bd593 HTTP/1.1
 
 
 ###
