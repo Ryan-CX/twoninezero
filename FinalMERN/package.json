@@ -1,12 +1,12 @@
 {
-	"name": "movies_rest",
+	"name": "exercise_rest",
 	"type": "module",
 	"version": "1.0.0",
 	"description": "",
-	"main": "movies_controller.mjs",
+	"main": "exercise_controller.mjs",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon --experimental-modules --es-module-specifier-resolution=node movies_controller.mjs"
+		"start": "nodemon --experimental-modules --es-module-specifier-resolution=node exercise_controller.mjs"
 	},
 	"author": "",
 	"license": "ISC",
