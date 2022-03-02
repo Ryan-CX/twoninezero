@@ -79,8 +79,7 @@ const replaceExercise = async (id, name, reps, weight, unit, date) => {
 //delete with the id,return code 204 and a message
 
 const deleteExercise = async (id) => {
-	const result = await Movie.deleteOne({ _id: id });
-	console.log('Deleted ' + result.deletedCount + ' documents');
+	const result = await Exercise.findByIdAndDelete(id);
 	return result;
 };
 

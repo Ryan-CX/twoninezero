@@ -1,0 +1,34 @@
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+   "name": "Bench Press",
+   "reps": 10,
+   "weight": 225,
+   "unit": "lbs",
+   "date": "08-16-2017"
+}
+
+###
+GET http://localhost:3000/exercises HTTP/1.1
+
+
+###
+
+PUT http://localhost:3000/exercises/621fccf307dd062fca724d06 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 10,
+    "weight": 225,
+    "unit": "lbs",
+    "date": "08-16-2017"
+
+}
+
+###
+DELETE http://localhost:3000/exercises/621fccf307dd062fca724d06 HTTP/1.1
+
+

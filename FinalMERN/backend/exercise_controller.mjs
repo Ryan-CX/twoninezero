@@ -46,10 +46,9 @@ app.put('/exercises/:_id', (req, res) => {
  * Delete the movie whose id is provided in the query parameters
  */
 app.delete('/exercises/:_id', (req, res) => {
-	const { _id } = req.params;
 	exerciseModel
-		.deleteExercise(_id)
-		.then((exercise) => res.status(204).json(exercise))
+		.deleteExercise(req.params._id)
+		.then(() => res.status(204).json({ message: 'Deleted' }))
 		.catch((err) => res.status(500).json(err));
 });
 

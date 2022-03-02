@@ -28,7 +28,7 @@ GET http://localhost:3000/exercises HTTP/1.1
 
 ### Edit the Deadlift. 
 ### NOTE: Set ID to the ID for Deadlift
-PUT http://localhost:3000/exercises/621e5f40dfdd7b51d41c2056 HTTP/1.1
+PUT http://localhost:3000/exercises/621fccf307dd062fca724d06 HTTP/1.1
 content-type: application/json
 
 {
@@ -45,7 +45,7 @@ GET http://localhost:3000/exercises HTTP/1.1
 
 ### Delete the Deadlift
 ### NOTE: Set ID to the ID for Deadlift
-DELETE http://localhost:3000/exercises/610e523255de4c51c4a3d1db HTTP/1.1
+DELETE http://localhost:3000/exercises/621e5f40dfdd7b51d41c2056 HTTP/1.1
 
 ### Verify that the Deadlift exercise has been deleted
 GET http://localhost:3000/exercises HTTP/1.1
