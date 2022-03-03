@@ -7,10 +7,10 @@ export const AddExercisePage = () => {
 	const [weight, setWeight] = useState(0);
 	const [unit, setUnit] = useState('');
 	const [date, setDate] = useState('');
-	const addExercise = async () => {
-		const exercise = await createExercise(name, rep, weight, unit, date);
-		setExercise(exercise);
-	};
+	// const addExercise = async () => {
+	// 	const exercise = await createExercise(name, rep, weight, unit, date);
+	// 	setExercise(exercise);
+	// };
 
 	return (
 		<div>
@@ -45,9 +45,9 @@ export const AddExercisePage = () => {
 				value={date}
 				onChange={(e) => setDate(e.target.value)}
 			/>
-			<button onClick={addExercise}>Add Exercise</button>
+			{/* <button onClick={addExercise}>Add Exercise</button> */}
 		</div>
 	);
 };
 
-export default AddMoviePage;
+export default AddExercisePage;

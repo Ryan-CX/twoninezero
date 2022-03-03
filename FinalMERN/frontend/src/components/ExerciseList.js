@@ -6,16 +6,18 @@ function ExerciseList({ exercise }) {
 		<table id='Exercises'>
 			<thead>
 				<tr>
-					<th>Title</th>
-					<th>Year</th>
-					<th>Language</th>
+					<th>Name</th>
+					<th>Reps</th>
+					<th>Weight</th>
+					<th>Unit</th>
+					<th>Date</th>
 					<th>Edit</th>
 					<th>Delete</th>
 				</tr>
 			</thead>
 			<tbody>
 				{exercise.map((e, i) => (
-					<Exercise Exercise={e} key={i} />
+					<Exercise exercise={e} key={i} />
 				))}
 			</tbody>
 		</table>

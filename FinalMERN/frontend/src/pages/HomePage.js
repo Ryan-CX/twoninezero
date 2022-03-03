@@ -7,6 +7,15 @@ import { useHistory } from 'react-router-dom';
 function HomePage() {
 	const [exercise, setExercise] = useState([]);
 
+	const loadExercises = async (exercise) => {
+		const response = await fetch('/exercises');
+		const data = await response.json();
+		setExercise(data);
+	};
+	useEffect(() => {
+		loadExercises();
+	}, []);
+
 	return (
 		<>
 			<h2>List of exercise</h2>
