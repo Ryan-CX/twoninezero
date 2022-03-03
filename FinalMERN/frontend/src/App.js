@@ -13,10 +13,10 @@ function App() {
 					<Route path='/' exact>
 						<HomePage />
 					</Route>
-					<Route path='/add-movie'>
+					<Route path='/add'>
 						<AddExercisePage />
 					</Route>
-					<Route path='/edit-movie'>
+					<Route path='/edit'>
 						<EditExercisePage />
 					</Route>
 				</div>
