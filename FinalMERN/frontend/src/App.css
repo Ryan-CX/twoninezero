@@ -1,38 +1,95 @@
 body {
-  background-color: rgb(255,255,255);
+	background-color: #98daec;
 }
 
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: black;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
+}
+.home {
+	height: 50vh;
+	width: auto;
+	background-color: #98daec;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
 }
 
-td, th {
-  border: 1px solid #ddd;
-  padding: 8px;
+td,
+th {
+	border: black 1px solid;
+	padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
 
-tr:hover {background-color: #ddd;}
+tr:hover {
+	background-color: #ddd;
+}
 
 th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04aa6d;
+	color: white;
+}
+.addPage {
+	background-color: #04aa6d;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	width: auto;
+}
+
+.inputField {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.inputSlot {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	text-align: center;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: auto;
+	border: #04aa6d solid 2px;
+}
+
+.header {
+	background-color: #04aa6d;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.addExercise {
+	background-color: #0446aa;
+	color: white;
+	margin-top: 80px;
+	text-decoration: none;
+	padding: 10px;
 }

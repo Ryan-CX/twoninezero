@@ -34,39 +34,50 @@ export const AddExercisePage = () => {
 	};
 
 	return (
-		<div>
-			<h1>Add Exercise</h1>
+		<div className='inputField'>
+			<h1 className='addPage'>Add Exercise</h1>
+
 			<input
+				className='inputSlot'
 				type='text'
 				placeholder='Enter name here'
 				value={name}
 				onChange={(e) => setName(e.target.value)}
 			/>
 			<input
-				type='text'
+				className='inputSlot'
+				type='number'
 				placeholder='Enter reps here'
 				value={rep}
 				onChange={(e) => setRep(e.target.value)}
 			/>
 			<input
-				type='text'
+				className='inputSlot'
+				type='number'
 				placeholder='Enter weight here'
 				value={weight}
 				onChange={(e) => setWeight(e.target.value)}
 			/>
 			<input
+				className='inputSlot'
 				type='text'
-				placeholder='Enter unit here'
+				placeholder='Enter "lbs" or "kgs"'
 				value={unit}
 				onChange={(e) => setUnit(e.target.value)}
 			/>
 			<input
+				className='inputSlot'
 				type='date'
 				placeholder='Enter date here'
 				value={date}
 				onChange={(e) => setDate(e.target.value)}
 			/>
-			<button onClick={postExercise}>Submit</button>
+			<button className='inputSlot' onClick={postExercise}>
+				Submit
+			</button>
+			<button className='inputSlot' onClick={() => history.push('/')}>
+				cancel
+			</button>
 		</div>
 	);
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import Exercise from './Exercise';
 
-function ExerciseList({ exercise }) {
+function ExerciseList({ exercises, onDelete }) {
 	return (
 		<table id='Exercises'>
 			<thead>
@@ -16,8 +16,8 @@ function ExerciseList({ exercise }) {
 				</tr>
 			</thead>
 			<tbody>
-				{exercise.map((e, i) => (
-					<Exercise exercise={e} key={i} />
+				{exercises.map((e, i) => (
+					<Exercise exercise={e} key={i} onDelete={onDelete} />
 				))}
 			</tbody>
 		</table>
