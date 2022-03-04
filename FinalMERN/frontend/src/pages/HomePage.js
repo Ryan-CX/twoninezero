@@ -38,16 +38,18 @@ function HomePage({ setExerciseToEdit }) {
 	}, []);
 
 	return (
-		<div className='home'>
-			<h2 className='header'>List of exercise</h2>
+		<div>
+			<div className='home'>
+				<h2 className='header'>List of exercise</h2>
+				<Link to='/add' className='addExercise'>
+					Add Exercise
+				</Link>
+			</div>
 			<ExerciseList
 				exercises={exercise}
 				onDelete={deleteExercise}
 				onEdit={editExercise}
 			></ExerciseList>
-			<Link to='/add' className='addExercise'>
-				Add new exercise
-			</Link>
 		</div>
 	);
 }

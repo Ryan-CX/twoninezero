@@ -5,11 +5,14 @@ import HomePage from './pages/HomePage';
 import AddExercisePage from './pages/AddExercisePage';
 import EditExercisePage from './pages/EditExercisePage';
 import { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
 	const [exerciseToEdit, setExerciseToEdit] = useState();
 	return (
 		<div className='App'>
+			<Header />
 			<Router>
 				<div className='App-header'>
 					<Route path='/' exact>
@@ -22,6 +25,7 @@ function App() {
 						<EditExercisePage exerciseToEdit={exerciseToEdit} />
 					</Route>
 				</div>
+				<Footer />
 			</Router>
 		</div>
 	);

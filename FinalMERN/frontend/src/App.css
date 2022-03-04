@@ -7,7 +7,6 @@ body {
 }
 
 .App-header {
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -20,13 +19,8 @@ body {
 	color: #61dafb;
 }
 .home {
-	height: 50vh;
-	width: auto;
 	background-color: #98daec;
 	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: space-between;
 }
 
 td,
@@ -85,11 +79,25 @@ th {
 	border-radius: 5px;
 	margin-top: 10px;
 }
+.mainHeader {
+	background-color: #bbc257;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	width: auto;
+}
 
 .addExercise {
 	background-color: #0446aa;
 	color: white;
-	margin-top: 80px;
+
 	text-decoration: none;
-	padding: 10px;
+}
+.footer {
+	background-color: #bbc257;
+	color: white;
+
+	font-size: 2rem;
+	width: 100%;
 }
