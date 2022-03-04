@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 export const AddExercisePage = () => {
 	const [name, setName] = useState('');
 	const [rep, setRep] = useState('');
-	const [weight, setWeight] = useState(0);
+	const [weight, setWeight] = useState('');
 	const [unit, setUnit] = useState('');
 	const [date, setDate] = useState('');
 	//call the backend post method on/exercises to create a new exercise and the use the useHistory hook to redirect to the home page
@@ -54,7 +54,7 @@ export const AddExercisePage = () => {
 			<input
 				className='inputSlot'
 				type='number'
-				placeholder='Enter weight here'
+				placeholder='Enter weight here.'
 				value={weight}
 				onChange={(e) => setWeight(e.target.value)}
 			/>

@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ExerciseList from '../components/ExerciseList';
-import { useState, useEffect, useHistory } from 'react';
+import { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
-function HomePage() {
+function HomePage({ setExerciseToEdit }) {
+	const history = useHistory();
 	const [exercise, setExercise] = useState([]);
 
 	const loadExercises = async () => {
@@ -26,6 +28,11 @@ function HomePage() {
 		}
 	};
 
+	const editExercise = (exercise) => {
+		setExerciseToEdit(exercise);
+		history.push('/edit');
+	};
+
 	useEffect(() => {
 		loadExercises();
 	}, []);
@@ -36,6 +43,7 @@ function HomePage() {
 			<ExerciseList
 				exercises={exercise}
 				onDelete={deleteExercise}
+				onEdit={editExercise}
 			></ExerciseList>
 			<Link to='/add' className='addExercise'>
 				Add new exercise
